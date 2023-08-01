@@ -21,8 +21,8 @@ const Banner = () => {
         color: theme.palette.text.secondary,
       }));
   return (
-    <Box style={{ marginTop: 80, marginLeft: 70, marginRight: 70}}>
-      <h1 variant="h6">Schedule Call</h1>
+    <Box style={{ marginTop: 130, marginLeft: 70, marginRight: 70}}>
+      <Typography style={{marginBottom: 20}} variant="h2">Schedule Call</Typography>
       <Box sx={{ width: '100%'}}
       
       >
