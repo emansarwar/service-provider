@@ -21,7 +21,7 @@ const Calender = ({timelist, date, setDate }) => {
   return (
     
     
-    <Box>
+    <Box style={{height: 536}}>
     <h2 style={{marginTop:5}}>Select Date and Time</h2>
     <LocalizationProvider
       
