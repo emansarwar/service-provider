@@ -1,6 +1,6 @@
-import { Box, Container, TextField } from "@mui/material";
+import { Box, Container, Grid, TextField } from "@mui/material";
 import React from "react";
-import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs'
+// import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs'
 
 import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFns";
 // import TextField from "@mui/material";
@@ -10,14 +10,20 @@ import Timezone from "./Timezone";
 // import Drawerr from "./Drawer/Drawerr";
 import { isWeekend } from "date-fns";
 
-const Calender = ({ date, setDate }) => {
+
+
+
+const Calender = ({timelist, date, setDate }) => {
+  
+  
     
-    
+
   return (
-    <Box
     
-     >
-      <LocalizationProvider
+    
+    <Box>
+    <h2 style={{marginTop:5}}>Select Date and Time</h2>
+    <LocalizationProvider
       
       dateAdapter={AdapterDateFns}>
         <StaticDatePicker
@@ -30,9 +36,7 @@ const Calender = ({ date, setDate }) => {
           setDate(newValue);
         }}
         renderInput={(params) => <TextField {...params} />}
-        >
-        
-        
+                >
           </StaticDatePicker>
       </LocalizationProvider>
       
@@ -43,8 +47,7 @@ const Calender = ({ date, setDate }) => {
           </h4>
            <Timezone ></Timezone>
         </Container>
-      
-    </Box>
+        </Box>
   );
 };
 

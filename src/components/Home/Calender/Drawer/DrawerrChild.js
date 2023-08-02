@@ -2,7 +2,7 @@ import { Button, Grid } from '@mui/material';
 import React from 'react';
 import InputField from './InputField';
 
-const TimeList = ({timelist}) => {
+const DrawerrChild = ({timelist}) => {
     const {time} = timelist;
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
@@ -23,4 +23,4 @@ const TimeList = ({timelist}) => {
     );
 };
 
-export default TimeList;
+export default DrawerrChild;

@@ -11,12 +11,13 @@ import Services from './components/services';
 import About from './components/About';
 import Nav1 from './components/Shared/Header/Nav1';
 import { Container } from '@mui/material';
+import NavFinal from './components/Shared/Header/NavFinal';
 function App() {
   return (
     <div className="App">
       
       <Router>
-        <Nav1></Nav1>
+        <NavFinal></NavFinal>
         <Container>
       <Routes>
         <Route path="/" element={<Home />} />

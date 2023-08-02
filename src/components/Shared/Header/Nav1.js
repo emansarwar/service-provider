@@ -15,7 +15,11 @@ export default function Nav1() {
   
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar  style={{background: deepPurple[50], paddingTop: 5, paddingBottom: 10}} position="fixed">
+      <AppBar  style={{background: deepPurple[50], paddingTop: 5, paddingBottom: 10}} position="fixed"
+      mounted
+      
+      
+      >
         <Container>
         <Toolbar>
           

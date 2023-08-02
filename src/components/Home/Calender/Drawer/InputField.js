@@ -41,11 +41,11 @@ const InputField = ({timelist, handleClose, open}) => {
         maxWidth: '100%',
       }}
     >
-      <TextField style={{marginBottom: 5}} fullWidth defaultValue="Your Name"  id="fullWidth" />
-      <TextField defaultValue="Your Phone" style={{marginBottom: 5}} fullWidth  id="fullWidth" />
-      <TextField defaultValue="Your Email" style={{marginBottom: 5}} fullWidth  id="fullWidth" />
-      <TextField defaultValue="Your Location" style={{marginBottom: 5}} fullWidth  id="fullWidth" />
-      <TextField defaultValue="Your Id" style={{marginBottom: 5}} fullWidth  id="fullWidth" />
+      <TextField style={{marginBottom: 5}} fullWidth label="Your Name"  id="fullWidth" />
+      <TextField label="Your Phone" style={{marginBottom: 5}} fullWidth  id="fullWidth" />
+      <TextField label="Your Email" style={{marginBottom: 5}} fullWidth  id="fullWidth" />
+      <TextField label="Your Location" style={{marginBottom: 5}} fullWidth  id="fullWidth" />
+      <TextField label="Your Id" style={{marginBottom: 5}} fullWidth  id="fullWidth" />
     </Box>
     </form>
         </Box>

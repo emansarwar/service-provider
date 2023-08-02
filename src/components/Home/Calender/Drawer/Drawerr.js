@@ -1,6 +1,7 @@
 import { Container, Grid } from '@mui/material';
 import React from 'react';
-import TimeList from './TimeList';
+// import TimeList from './DrawerrChild';
+import DrawerrChild from './DrawerrChild';
 
 const timelists = [
   {
@@ -54,7 +55,7 @@ console.log(date)
       <h2>{date.toDateString()}</h2>
       <Grid>
         {
-          timelists.map(timelist =><TimeList
+          timelists.map(timelist =><DrawerrChild
           key={timelist.id}
           timelist={timelist}
           />)
